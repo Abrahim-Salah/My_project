@@ -3,21 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="with=device-width,initial-scale=1.0">
+    <title>HOME</title>
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/responsv.css1">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/JavaScript" src="js/cloud-carousel.1.0.5.js"></script>
+
+    
+    
+    <script type="text/javascript">
+    $(document).ready(function(){
+                             
+        // This initialises carousels on the container elements specified, in this case, carousel1.
+        $("#carousel1").CloudCarousel(		
+            {			
+                reflHeight: 40,
+                reflGap: 20,
+                titleBox: $('#da-vinci-title'),
+                altBox: $('#da-vinci-alt'),
+                buttonLeft: $('#slider-left-but'),
+                buttonRight: $('#slider-right-but'),
+                yRadius: 50,
+                xPos: 480,
+                yPos: 0,
+                speed:0.15,
+                autoRotate: "yes",
+                autoRotateDelay: 1500
+            }
+        );
+    });
+     
+    </script>
 <body>
  
     
     <header>
       <div class="logo" >
-        <img src="./img/كأس العالم2022.png" alt="Site Logo" >
+        <img src="./img/icon.jpg" alt="Site Logo" >
       </div>
       <nav>
         <ul class="navigation">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./pages/About Us.html">About Us</a></li>
+          <li class="home"><a href="./index.html">Home</a></li>
+          <li><a href="./pages/About_Us.html">About Us</a></li>
           <li><a href="./pages/Comment.html">Comment</a></li>
           <li><a href="./pages/Mach.html">Match</a></li>
         </ul>
@@ -25,15 +55,36 @@
     </header>
 
     <section>
-        <div class="wow">
-  
-        </div>
+
+  <!--wow Slider-->
+<div id="templatemo_slider">
+	 <!-- This is the container for the carousel. -->
+     <div id = "carousel1" >            
+        <!-- All images with class of "cloudcarousel" will be turned into carousel items -->
+        <!-- You can place links around these images -->
+        <a href="#" rel="lightbox"><img class="cloudcarousel" src="./img/mbappe-pictures.jpg" alt="CSS Templates 1" title="Website Templates 1" width="300px" height="200px" /></a>
+        <a href="#" rel="lightbox"><img class="cloudcarousel" src="./img/780388.jpg" alt="CSS Templates 2" title="Website Templates 2" width="300px" height="200px" /></a>
+        <a href="#" rel="lightbox"><img class="cloudcarousel" src="./img/lionel-messi-fc-barcelona-barca-wallpaper-preview.jpg" alt="CSS Templates 3" title="Website Templates 3" width="300px" height="200px"/></a>
+        <a href="#" rel="lightbox"><img class="cloudcarousel" src="./img/manchester-united-wallpaper-preview.jpg" alt="CSS Templates 4" title="Website Templates 4"width="300px" height="200px" /></a>
+        <a href="#" rel="lightbox"><img class="cloudcarousel" src="./img/chelsea-fc-soccer-soccer-clubs-premier-league-wallpaper-preview (4).jpg" alt="Flash Templates 1" title="Flash Templates 1" width="300px" height="200px"/></a>
+        <a href="#" rel="lightbox"><img class="cloudcarousel" src="./img/logo-football-soccer-juventus-emblem-hd-wallpaper-preview.jpg" alt="Flash Templates 2" title="Flash Templates 2" width="300px" height="200px"/></a>
+        <a href="#" rel="lightbox"><img class="cloudcarousel" src="./img/483265.jpg" alt="Flash Templates 3" title="Flash Templates 3" width="300px" height="200px"/></a>
+        <a href="#" rel="lightbox"><img class="cloudcarousel" src="./img/cristiano-ronaldo-juventus-soccer-real-madrid-wallpaper-preview.jpg" alt="Flash Templates 4" title="Flash Templates 4" width="300px" height="200px"/></a>
+     </div>
+    
+    <!-- Define left and right buttons. -->
+    <center>
+    <input  id="slider-left-but" type="button" value="" />
+    <input id="slider-right-but" type="button" value="" />
+    </center>
+   </div>
         
-        <div class="parent">
+        
+    <div class="parent">
             
-          <article class="article1"> 
+       <article> 
             <figure>
-           <img src="./img/imagick1.jfif" alt="Image 2" >
+           <img src="./img/imagick1.jfif" alt="" >
            <figcaption>
                <h2>هل هو مصاب؟.. ديشان يوضح السبب وراء غياب مبابي عن لقاء ألمانيا</h2>
            </figcaption>
@@ -43,60 +94,61 @@
             وتعرض منتخب فرنسا للخسارة ودياً أمام ألمانيا بهدفين مقابل هدف، ولم يشارك كيليان مبابي في هذه المباراة، حيث شاهدها على مقاعد البدلاء.
             وأشارت التقارير الصحفية قبل المباراة إلى أن كيليان مبابي قد تعرض للإصابة في ركبته، وسيغيب عن المباراة أمام ألمانيا لهذا السبب.
             كيليان مبابي غاب عن لقاء فرنسا وألمانيا بسبب الإصابة
-  
           </p>
            
         </figure>
-        </article>
+      </article>
      
       
-         <article class="article2"> 
+         <article> 
              <figure>
-            <img src="./img/imagick2.jfif" alt="Image 2">
+            <img src="./img/imagick2.jfif" alt="">
             <figcaption>
                 <h2>مبابي مصمم على الانتقال إلى ريال مدريد مجاناً</h2>
             </figcaption>
-  <p>
+
+           <p>
             يبدو أن إغلاق سوق الانتقالات الصيفي، واستمرار كيليان مبابي
              مع باريس سان جيرمان، لن يوقف مسلسل انتقاله إلى ريال مدريد طوال الموسم، 
              وهذا ما أكدته صحيفة ليكيب الفرنسية في تقرير جديد نشرته صباح اليوم الثلاثاء.
-  وأعلن كيليان مبابي عدم رغبته في تجديد عقده مع باريس سان جيرمان حتى صيف 2025،
-   وكان متوقعاً انتقاله إلى ريال مدريد هذا الصيف، 
-  خصوصاً بعد أن ضغط عليه النادي الباريسي للرحيل باستبعاده من الفريق الأول، لكن الريال لم يقدم أي 
-  عرض في نهاية المطاف، واللاعب أيضاً كان مصمماً على البقاء لسنة أخرى في ملعب بارك دي برانس.
+            وأعلن كيليان مبابي عدم رغبته في تجديد عقده مع باريس سان جيرمان حتى صيف 2025،
+            وكان متوقعاً انتقاله إلى ريال مدريد هذا الصيف، 
+            خصوصاً بعد أن ضغط عليه النادي الباريسي للرحيل باستبعاده من الفريق الأول، لكن الريال لم يقدم أي 
+            عرض في نهاية المطاف، واللاعب أيضاً كان مصمماً على البقاء لسنة أخرى في ملعب بارك دي برانس.
   
-  </p>
+          </p>
           </figure>
-         </article>
+        </article>
   
-         <article class="article3"> 
+         <article> 
           <figure>
-         <img src="./img/أنشيلوتي-ريال-مدريد-2-2.jpg" alt="Image 2" width="300px">
+         <img src="./img/أنشيلوتي-ريال-مدريد-2-2.jpg" alt="">
          <figcaption>
           <h2>أنشيلوتي يعلق على مواجهة ريال مدريد ونابولي وصفقة مبابي</h2>
          </figcaption>
+
          <p>
-            
           علق كارلو أنشيلوتي، المدير الفني لفريق ريال مدريد الإسباني، على مواجهة نابولي الإيطالي، في مسابقة دوري أبطال أوروبا.
-  
           فرعة دور المجموعات لدوري أبطال أوروبا كانت قد أوقعت الميرنجي في المجموعة الثالثة، مع كل من، نابولي الإيطالي، يونيون برلين الألماني وسبورتينج براجا البرتغالي.
-          
-          الميرنجي يستقبل نظيره خيتافي، مساء غد السبت، في الجولة الرابعة من الدوري الإسباني، على ملعب سانتياجو برنابيو.
-                 
+
+          الميرنجي يستقبل نظيره خيتافي، مساء غد السبت، في الجولة الرابعة من الدوري الإسباني، على ملعب سانتياجو برنابيو.  
           </p>
+
           </figure>
       </article>
+
+
     </div>
-      </section>
+</section>
   
       <footer>
         <p>© 2023 Sports Web . All rights reserved.</p>
         <ul class="footer-navigation">
-          <li><i class="fab fa-facebook-f"></i></li>
-          <li><i class="fab fa-twitter"></i></a></li>
-          <li><i class="fab fa-instagram"></i></a></li>
-          <li><i class="fab fa-linkedin-in"></i></a></li>
-          <li><i class="fab fa-youtube"></i></a></li>
+          <li><a href="#" class="fab fa-facebook-f"></a></li>
+          <li><a href="#" class="fab fa-twitter"></a></li>
+          <li><a href="#" class="fab fa-instagram"></a></li>
+          <li><a href="#" class="fab fa-linkedin-in"></a></li>
+          <li><a href="#" class="fab fa-youtube" ></a></li>
         </ul>
       </footer>
     </body>

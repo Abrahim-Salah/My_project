@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About US</title>
+    <link rel="stylesheet" href="../css/about-us.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo" s>
+          <img src="../img/icon.jpg" alt="Site Logo" >
+        </div>
+        <nav>
+          <ul class="navigation">
+            <li><a href="../index.html">Home</a></li>
+            <li class="About"><a href="../pages/About_Us.html">About Us</a></li>
+            <li><a href="../pages/Comment.html">Comment</a></li>
+            <li><a href="../pages/Mach.html">Match</a></li>
+          </ul>
+        </nav>
+      </header>
+
+  <section id="sec">
+
+    <article id="arti">
+
+        <div id="About_Us" >
+          <h1>About Us</h1>
+
+          <p>
+
+            "مرحبًا بكم في موقعنا! نحن موقع سبورت لايف ونسعد بزيارتكم لنا.
+            
+            نحن فريق متحمس من الخبراء والمحترفين في مجال الرياضة نعمل بجد لتقديم محتويات قيمة التي تلبي احتياجاتكم وتفوق توقعاتكم.
+            
+            مهمتنا هي إيصال المعلومات اليكم ونسعى جاهدين لتحقيقها من خلال صفحاتنا 
+            
+            نحن نؤمن بأن الجهد هو أساس نجاحنا، ونعمل بكل احترافية وأخلاقية لتحقيق رضاكم التام.
+            
+            عندما تتعاملون معنا، ستجدون كل مايسركم فنحن ملتزمون بتقديم أعلى مستويات الجودة والخدمة. نحن نهتم بتفاصيلكم ونسعى لتحقيق تجربة مميزة ورضا تام.
+            
+            نحن نشعر بالفخر لخدمتكم ونتطلع إلى بناء علاقات قوية ومستدامة مع عملائنا. نحن نرحب بأسئلتكم واقتراحاتكم، فلا تترددوا في التواصل معنا.
+            
+            شكرًا لزيارتكم لموقعنا، 
+          </p>
+
+        </div>
+       <div>
+
+        
+        <button onclick="showContactForm() ,heding()" id="sing">Sign Up</button>
+       </div>
+      
+
+        <div id="contactForm" style="display: none;" >
+          <span class="borderline"></span>
+        <form action="" onsubmit="submitForm(event)">
+          <h2 id="view9">Sign in</h2>
+
+              <div class="inputbox">
+                <input type="text" name="NAME" required>
+                <span>UserName</span>
+                <i></i>
+              </div>
+
+              <div class="inputbox">
+                <input type="password" name="PassWord" required>
+                <span>PassWord</span>
+                <i></i>
+              </div>
+           
+              <div class="inputbox" >
+                <input type="tel" name="PHON" required>
+                <span>Phone</span>
+                <i></i>
+              </div>
+
+              <div class="inputbox">
+                <input type="email" name="Email"  required>
+                <span>Email</span>
+                <i></i>
+              </div>
+
+              <div class="inputbox">
+                <input type="number" name="AGE" required>
+                <span>Age</span>
+                <i></i>
+              </div>
+
+              <div class="inputbox" >
+                <input type="text" name="Gendr" required>
+                <span>Gendr</span>
+                <i></i>
+              </div>
+  
+              <input type="submit" value="Login" id="view7 ">
+             <button class="back" onclick="onback()"><span></span>Back</button>
+
+        </form>
+      </div>
+      <div id="submissionMessage" style="display: none;" >
+        <p>شكرًا للتواصل معنا!</p>
+      </div>
+
+     
+    </article>
+
+      </section>
+     
+      
+
+
+      <footer>
+        <p>© 2023 Sports Web . All rights reserved.</p>
+        <ul class="footer-navigation">
+          <li><a href="#" class="fab fa-facebook-f"></a></li>
+          <li><a href="#" class="fab fa-twitter"></a></li>
+          <li><a href="#" class="fab fa-instagram"></a></li>
+          <li><a href="#" class="fab fa-linkedin-in"></a></li>
+          <li><a href="#" class="fab fa-youtube" ></a></li>
+        </ul>
+      </footer>
+
+
+      <script>
+        function showContactForm() {
+          var contactForm = document.getElementById("contactForm");
+          contactForm.style.display = "block";         
+        }
+  
+        function heding() {
+          var About = document.getElementById("About_Us");
+          About.style.display = "none";
+          var arti = document.getElementById("arti");
+          arti.style.backgroundColor="#051f2b";
+          arti.style.border="none";
+          arti.style.boxShadow="none";
+          var sing = document.getElementById("sing");
+          sing.style.display="none";
+          var sec = document.getElementById("sec");
+          sec.style.backgroundColor="#051f2b";  
+        }
+        
+        function onback(){
+          var contactForm = document.getElementById("contactForm");
+          contactForm.style.display = "none"; 
+          var About = document.getElementById("About_Us");
+          About.style.display = "block";
+          var arti = document.getElementById("arti");
+          arti.style.backgroundColor="#cce0ee";
+          arti.style.border="5px black solid";
+          arti.style.boxShadow="inset 0 0 30px black";
+          var sing = document.getElementById("sing");
+          sing.style.display="block";
+          var sec = document.getElementById("sec");
+          sec.style.backgroundColor="#8da9be";
+        }
+        function submitForm(event) {
+          event.preventDefault();
+    
+          var submissionMessage = document.getElementById("submissionMessage");
+          submissionMessage.style.display = "block";
+        
+          var contactForm = document.getElementById("contactForm");
+          contactForm.style.display = "none";
+        }
+      </script>
+</body>
+</html>
+</body>
+</html>
