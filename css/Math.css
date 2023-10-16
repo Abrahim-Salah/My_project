@@ -1,0 +1,241 @@
+body{
+    width: 1vr;
+    height: 1000px;
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: repeat(10,auto);
+    grid-template-rows: 15% 80% 15%;
+    grid-template-areas: "header header  header header header header header header header header"
+                         "art art art art art art art art art art "
+                          "foot foot foot foot foot foot foot foot foot foot";
+    gap: 2px 5px ;
+  }
+  
+  header{
+    grid-area: header;
+    background-color: #0d2b46;
+    color: white;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "log" "nav";
+    padding: 10px;
+    box-shadow: 0 0 15px #00bcd4;
+                          
+  }
+  
+  .logo{
+  grid-area: log;
+  background-color: #cce0ee;
+      border: 5px #8da9be solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .logo img{
+    height: 50px;
+  }
+  header nav {
+  grid-area: nav;
+  }
+  header nav ul{
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    font-size: 20px;
+  }
+  nav li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+   
+    
+  }
+  .navigation li a {
+    text-decoration: none;
+    color: snow;
+  }
+  
+
+  article{
+    grid-area: art;
+    background-color: #0d2b46;
+    border: #8da9be 5px solid;
+    box-shadow: 0 0 15px #00bcd4;
+}
+
+
+article img{
+    width: 50px;
+    height: 50px;
+    border-radius: 20% ;
+    box-shadow: 0 0 15px #00bcd4;
+    box-shadow: 0 10px 15px #cddc39;
+    
+    
+  }
+ 
+table{
+   width: 80%;
+    border-bottom: 2px blue solid;
+    background-color: #4d7b9c;
+    border: #8da9be 5px solid;
+    box-shadow: 0 0 15px #00bcd4;
+    margin-left: 10%;
+}
+caption{
+    margin: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: bold;
+    color: #cddc39;
+}
+thead{
+    padding: 15px;
+    color: #cce0ee;
+    background-color:black;
+    text-align: center;
+
+}
+tbody td{
+   
+    padding: 15px;
+    text-align: center;
+    background-color: #0d2b46;
+    padding: 15px;
+    text-align: center;
+    color: snow;
+
+
+    text-shadow: 0px 5px 10px #cce0ee;
+    
+    animation-name: math;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+
+@keyframes math{
+
+  0% {
+    filter: drop-shadow(0 0 15px #4caf50) ;
+  }
+  20% {
+    filter: drop-shadow(0 0 15px #cddc39) ;
+  
+  }
+  40% {
+    filter: drop-shadow(0 0 15px #ffeb3b);
+  }
+  60% {
+    filter: drop-shadow(0 0 15px #ffc107);
+  }
+  80% {
+    filter: drop-shadow(0 0 15px #68e26d) ;
+  }
+  100% {
+    filter: drop-shadow(0 0 15px #4caf50);
+  }
+}
+
+
+
+.team{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+footer{
+  grid-area: foot;
+  background-color:#0d2b46;
+  color: white;
+  padding: 10px;
+  box-shadow: 0 0 15px #00bcd4;
+}
+
+
+footer ul{
+  display: flex;
+  justify-content: center;
+}
+footer p{
+ 
+    color: rgb(168 170 172);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+footer ul li{
+  position: relative;
+  display: block;
+  color: #666;
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  background: #171515;
+  line-height: 60px;
+  border-radius: 50%;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+footer ul li i{
+  margin-left: 13px;
+  
+}
+
+
+footer ul li a:nth-child(1):hover{
+  color: #456cba;
+  box-shadow: 0 0 15px #4267B2;
+  text-shadow: 0 0 15px #4267B2;
+  background-color: #0d2b46;
+}
+
+footer ul li:nth-child(1):hover{
+  color: #456cba;
+  box-shadow: 0 0 15px #4267B2;
+  text-shadow: 0 0 15px #4267B2;
+  background-color: #0d2b46;
+}
+
+footer ul li:nth-child(2):hover{
+  color: #26a4f2;
+  box-shadow: 0 0 15px #1DA1F2;
+  text-shadow: 0 0 15px #1DA1F2;
+  background-color: #0d2b46;
+}
+footer ul li:nth-child(3):hover{
+  color: #e23670;
+  box-shadow: 0 0 15px #E1306C;
+  text-shadow: 0 0 15px #E1306C;
+  background-color: #0d2b46;
+}
+footer ul li:nth-child(4):hover{
+  color: #2a6cbb;
+  box-shadow: 0 0 15px #2867B2;
+  text-shadow: 0 0 15px #2867B2;
+  background-color: #0d2b46;
+}
+footer ul li:nth-child(5):hover{
+  color: #e23670;
+  box-shadow: 0 0 15px #ff0000;
+  text-shadow: 0 0 15px #ff0000;
+  background-color: #0d2b46;
+}
+
+footer ul li:nth-child(5):hover {
+  color: #e23670;
+  box-shadow: 0 0 15px #ff0000;
+  text-shadow: 0 0 15px #ff0000;
+  background-color: #0d2b46;
+}

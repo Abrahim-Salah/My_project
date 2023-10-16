@@ -1,4 +1,20 @@
+/*
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
 
+#validation-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+#success-message {
+  color: green;
+  margin-top: 10px;
+}
+*/
 
 body{
     width: 1vr;
@@ -8,7 +24,7 @@ body{
     grid-template-columns: repeat(10,auto);
     grid-template-rows: 15% 80% 15%;
     grid-template-areas: "header header  header header header header header header header header"
-                         "sec sec sec sec sec sec sec sec sec sec "
+                         "sec sec sec sec sec sec sec sec sec sec"
                           "foot foot foot foot foot foot foot foot foot foot";
     gap: 2px 5px ;
   }
@@ -67,19 +83,24 @@ body{
 
 section{
         grid-area: sec;
-        background-color: #4d7b9c;
+        display: grid;
+        grid-template-columns: repeat(5,20%);
+        grid-template-areas: "from from from  asi asi";
+        background-color: #cce0ee;
         color: white;
         padding: 10px;
         border: #8da9be 5px solid;
         
 } 
 
-
+section fieldset{
+  grid-area: from;
+  background-color: #4d7b9c;
+}
  section div{
-    width: 60%;
+    
     margin: 10px;
     padding: 5px;
-    
 }
 
 div label {
@@ -88,13 +109,19 @@ div label {
 }
 
 
-div input{
-   width: 60%; 
-   border:  2px black solid;
+input{
+   width: 400px; 
    position: absolute;
    left: 15%;
    background-color: #cce0ee;
+   border-radius: 5px 10px;
+
+
+   
 }
+
+
+
 
 .age{
     width: 5%; 
@@ -110,6 +137,21 @@ textarea{
     width: 80%;
     height: 100px;
     border:  2px black solid;
+}
+
+aside{
+  grid-area: asi;
+  background-color: #4d7b9c;
+  margin-left: 10px;
+  padding: 10px;
+}
+aside h1{
+  color: snow;
+}
+
+aside p{
+  color: cornsilk;
+  font-size: 20px;
 }
 footer{
   grid-area: foot;
